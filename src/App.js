@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
-import DisplayMyName from './DisplayMyName'
-import WhatReactRenders from './WhatReactRenders'
 
-const name='Justyna'
 
-const App =()=>(
-      <div>
-        <DisplayMyName 
-        name={name}
-        />
-        <WhatReactRenders />
-      </div>
-    );
+
+
+const names = ['Ala', 'Ola', 'Justyna']
+const namesList = names.map(name =>
+  <li
+    key={name}
+  >
+    {name}
+  </li>)
+
+
+const App = (props) => (
+  <div>
+    <div>
+      {names}
+    </div>
+    <ul>
+      {namesList}
+    </ul>
+  </div>
+);
 
 export default App;
