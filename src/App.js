@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Button from './Button'
 
 
 
@@ -17,6 +17,7 @@ const App = (props) => (
         {name} </li>)
       }
     </ul>
+    <Button/>
   </div>
 );
 
