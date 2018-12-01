@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
+import DisplayMyName from './DisplayMyName'
 
-
-class App extends Component {
-  render() {
-    return (
+const App =()=>(
       <div>
-        Hello !
+        <DisplayMyName />
       </div>
     );
-  }
-}
 
 export default App;
