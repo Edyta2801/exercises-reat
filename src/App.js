@@ -3,7 +3,9 @@ import DisplayMyName from './DisplayMyName'
 
 const App =()=>(
       <div>
-        <DisplayMyName />
+        <DisplayMyName 
+        name='Edyta'
+        />
       </div>
     );
 

@@ -1,9 +1,11 @@
 import React from 'react'
 
-const DisplayMyName =() =>(
+const DisplayMyName =(props) =>{
+
+return(
 <div>
-    Edyta
+    {props.name}
 </div>
 )
-    
+}  
 export default DisplayMyName
