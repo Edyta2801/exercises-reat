@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import DisplayMyName from './DisplayMyName'
 
+
+const name='Justyna'
+
 const App =()=>(
       <div>
         <DisplayMyName 
-        name='Edyta'
+        name={name}
         />
       </div>
     );
