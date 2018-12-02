@@ -1,11 +1,18 @@
 import React from 'react'
+import RaisedButton from 'material-ui/RaisedButton'
 
-const Button = ( props) => (
-    <button
-        onClick={props.onClickHandler}
-    >
-        {props.label}
-    </button>
-)
+const style = { margin: 12 }
 
-export default Button
+const Button = (props) => (
+  <div>
+    <RaisedButton
+      label="Primary"
+      primary={true}
+      style={style}
+    />
+  </div>
+);
+
+
+
+export default Button;
