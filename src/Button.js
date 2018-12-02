@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = ({ label }) => (
+const Button = ( props) => (
     <button
-        onClick={() => alert('ok')}
+        onClick={props.onClickHandler}
     >
-        {label}
+        {props.label}
     </button>
 )
 

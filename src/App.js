@@ -12,13 +12,20 @@ const App = (props) => (
       {names}
     </div>
     <ul>
-      {names.map(name=>
+      {names.map(name =>
         <li key={name}>
-        {name} </li>)
+          {name} </li>)
       }
     </ul>
     <Button
-    label='Click me'
+      label='Click me'
+      onClickHandler={()=>alert('Kliknij mnie')}
+
+    />
+    <Button
+      label='Clicked me'
+      onClickHandler={()=>alert('Kliknąłeś')}
+
     />
   </div>
 );
