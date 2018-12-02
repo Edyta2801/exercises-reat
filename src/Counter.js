@@ -7,6 +7,7 @@ class Counter extends React.Component {
 
 
         this.state = {
+            otherProps:'whatever',
             number: props.startNumber
         }
 
@@ -15,14 +16,14 @@ class Counter extends React.Component {
         return (
             <div>
                 <h1>
-                    {this.setState.number}
+                    {this.state.number}
                 </h1>
                 <Button
-                    onClick={() => alert('Works')}
+                    onClick={() => this.setState({number:this.state.number +1})}
                     label={'+'}
                 />
                 <Button
-                    onClick={() => alert('Works')}
+                    onClick={() =>this.setState({number:this.state.number -1})}
                     label={'-'}
                 />
             </div>
