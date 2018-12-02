@@ -7,11 +7,18 @@ class Counter extends React.Component {
 
 
         this.state = {
-            otherProps:'whatever',
+            otherProps: 'whatever',
             number: props.startNumber
         }
-
     }
+    incHandler() {
+        this.setState({ number: this.state.number + 1 })
+    }
+    decHandler() {
+        this.setState({ number: this.state.number + 1 })
+    }
+
+
     render() {
         return (
             <div>
@@ -19,11 +26,11 @@ class Counter extends React.Component {
                     {this.state.number}
                 </h1>
                 <Button
-                    onClick={() => this.setState({number:this.state.number +1})}
+                    onClick={() => this.incHandler()}
                     label={'+'}
                 />
                 <Button
-                    onClick={() =>this.setState({number:this.state.number -1})}
+                    onClick={() => this.decHandler()}
                     label={'-'}
                 />
             </div>
