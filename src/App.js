@@ -1,14 +1,11 @@
 import React from 'react'
-import Button from './Button'
+import Counter from './Counter'
 import Paper from './Paper'
 
 const App = (props) => (
   <Paper>
-    <Button
-    onClick={()=>alert('1')}
-    />
-    <Button
-    onClick={()=>alert('2')}
+    <Counter
+    startNumber={5}
     />
   </Paper>
 );
