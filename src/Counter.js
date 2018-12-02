@@ -26,7 +26,7 @@ class Counter extends React.Component {
                     {this.state.number}
                 </h1>
                 <Button
-                    onClick={() => this.incHandler()}
+                    onClick={this.incHandler.bind(this)}
                     label={'+'}
                 />
                 <Button
