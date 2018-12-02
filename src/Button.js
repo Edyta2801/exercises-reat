@@ -9,6 +9,7 @@ const Button = (props) => (
       label="Primary"
       primary={true}
       style={style}
+      onClick={props.onClick}
     />
   </div>
 );
