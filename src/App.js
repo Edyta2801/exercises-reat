@@ -1,32 +1,16 @@
 import React from 'react';
-import Button from './Button'
 
+import Route1 from './Route1'
+import Route2 from './Route2'
+import Route3 from './Route3'
 
-
-const names = ['Ala', 'Ola', 'Justyna']
 
 
 const App = (props) => (
   <div>
-    <div>
-      {names}
-    </div>
-    <ul>
-      {names.map(name =>
-        <li key={name}>
-          {name} </li>)
-      }
-    </ul>
-    <Button
-      label='Click me'
-      onClickHandler={()=>alert('Kliknij mnie')}
-
-    />
-    <Button
-      label='Clicked me'
-      onClickHandler={()=>alert('Kliknąłeś')}
-
-    />
+    <Route1/>
+    <Route2/>
+    <Route3/>
   </div>
 );
 

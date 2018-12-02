@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Route1= (props)=>(
+const Route2= (props)=>(
     <h1>
         Route2
     </h1>
-
+)
 
 export default Route2
