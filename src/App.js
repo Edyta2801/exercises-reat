@@ -1,15 +1,16 @@
 import React from 'react'
 import Button from './Button'
+import Paper from './Paper'
 
 const App = (props) => (
-  <div>
+  <Paper>
     <Button
     onClick={()=>alert('1')}
     />
     <Button
     onClick={()=>alert('2')}
     />
-  </div>
+  </Paper>
 );
 
 
