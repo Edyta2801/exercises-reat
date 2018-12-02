@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Button =()=>(
-    <button>
-Click Me
+const Button = ({ label }) => (
+    <button
+        onClick={() => alert('ok')}
+    >
+        {label}
     </button>
 )
 

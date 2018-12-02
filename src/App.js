@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from './Button'
 
 
@@ -17,7 +17,9 @@ const App = (props) => (
         {name} </li>)
       }
     </ul>
-    <Button/>
+    <Button
+    label='Click me'
+    />
   </div>
 );
 
